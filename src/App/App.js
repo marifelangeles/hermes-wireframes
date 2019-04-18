@@ -4,12 +4,25 @@ import {
   Route,
 } from 'react-router-dom';
 
+// import pages
+import Connect from '../Components/ConnectPage/connect';
+import Platforms from '../Components/PlatformsPage/platforms';
+
 class App extends Component {
   render() {
     return (
-      <div>
-        hello
-      </div>
+      <Router>
+        <Route
+          exact
+          path="/connect"
+          component={Connect}
+        />
+        <Route
+          exact
+          path="/platforms"
+          component={Platforms}
+        />
+      </Router>
     );
   }
 }
