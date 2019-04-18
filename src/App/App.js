@@ -9,6 +9,8 @@ import ConnectPage from '../Pages/connect';
 import PlatformsPage from '../Pages/platforms';
 import UploadPage from '../Pages/upload';
 import EditPage from '../Pages/edit';
+import ReviewPage from '../Pages/review';
+import PublishedPage from '../Pages/published';
 
 
 class App extends Component {
@@ -34,6 +36,16 @@ class App extends Component {
           exact
           path="/edit"
           component={EditPage}
+        />
+        <Route
+          exact
+          path="/review"
+          component={ReviewPage}
+        />
+        <Route
+          exact
+          path="/published"
+          component={PublishedPage}
         />
       </Router>
     );
