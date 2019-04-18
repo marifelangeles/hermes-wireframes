@@ -5,8 +5,11 @@ import {
 } from 'react-router-dom';
 
 // import pages
-import Connect from '../Components/ConnectPage/connect';
-import Platforms from '../Components/PlatformsPage/platforms';
+import ConnectPage from '../Pages/connect';
+import PlatformsPage from '../Pages/platforms';
+import UploadPage from '../Pages/upload';
+import EditPage from '../Pages/edit';
+
 
 class App extends Component {
   render() {
@@ -15,12 +18,22 @@ class App extends Component {
         <Route
           exact
           path="/connect"
-          component={Connect}
+          component={ConnectPage}
         />
         <Route
           exact
           path="/platforms"
-          component={Platforms}
+          component={PlatformsPage}
+        />
+        <Route
+          exact
+          path="/upload"
+          component={UploadPage}
+        />
+        <Route
+          exact
+          path="/edit"
+          component={EditPage}
         />
       </Router>
     );
